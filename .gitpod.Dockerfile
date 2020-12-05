@@ -25,8 +25,6 @@ RUN sudo mkdir /home/poetry && \
 
 ENV PATH=$PATH:/home/poetry/.poetry/bin
 
-RUN sudo chown -R poetry:poetry /home/poetry
-
 COPY poetry.lock pyproject.toml ./
 
 RUN poetry config virtualenvs.create false \
