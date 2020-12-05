@@ -1,4 +1,4 @@
 tasks:
-  - init: 'echo "TODO: Replace with init/build command"'
-    command: 'echo "TODO: Replace with command to start project"'
+  - init: 'curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -'
+    command: 'source $HOME/.poetry/env && source export PIP_USER=false && poetry update'
 
