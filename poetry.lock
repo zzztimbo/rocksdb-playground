@@ -78,16 +78,8 @@ six = ">=1.5"
 
 [[package]]
 category = "main"
-description = "World timezone definitions, modern and historical"
-name = "pytz"
-optional = false
-python-versions = "*"
-version = "2020.4"
-
-[[package]]
-category = "main"
 description = "Python bindings for RocksDB"
-name = "rocksdb"
+name = "python-rocksdb"
 optional = false
 python-versions = "*"
 version = "0.7.0"
@@ -98,6 +90,14 @@ setuptools = ">=25"
 [package.extras]
 doc = ["sphinx-rtd-theme", "sphinx"]
 test = ["pytest"]
+
+[[package]]
+category = "main"
+description = "World timezone definitions, modern and historical"
+name = "pytz"
+optional = false
+python-versions = "*"
+version = "2020.4"
 
 [[package]]
 category = "main"
@@ -131,7 +131,7 @@ version = "1.0.3"
 dev = ["pytest (>=4.6.2)", "black (>=19.3b0)"]
 
 [metadata]
-content-hash = "9cd573828c698180730c2c70c0079229bf5314f0e6310e850500e951637310da"
+content-hash = "450353958f3a2dc0ceddf23ae519bb411be8efaf8363039e39a33be469b60754"
 python-versions = "^3.7"
 
 [metadata.files]
@@ -267,14 +267,12 @@ python-dateutil = [
     {file = "python-dateutil-2.8.1.tar.gz", hash = "sha256:73ebfe9dbf22e832286dafa60473e4cd239f8592f699aa5adaf10050e6e1823c"},
     {file = "python_dateutil-2.8.1-py2.py3-none-any.whl", hash = "sha256:75bb3f31ea686f1197762692a9ee6a7550b59fc6ca3a1f4b5d7e32fb98e2da2a"},
 ]
+python-rocksdb = [
+    {file = "python-rocksdb-0.7.0.tar.gz", hash = "sha256:aa692fbd06d8ed4ad641feee2970062fe01120e87b645a29403c71c628639e4f"},
+]
 pytz = [
     {file = "pytz-2020.4-py2.py3-none-any.whl", hash = "sha256:5c55e189b682d420be27c6995ba6edce0c0a77dd67bfbe2ae6607134d5851ffd"},
     {file = "pytz-2020.4.tar.gz", hash = "sha256:3e6b7dd2d1e0a59084bcee14a17af60c5c562cdc16d828e8eba2e683d3a7e268"},
-]
-rocksdb = [
-    {file = "rocksdb-0.7.0-cp37-cp37m-manylinux2010_x86_64.whl", hash = "sha256:3f78c5ba0659489e4653b8318eceaa803533c29fc7b4d9585514c7a071bc91ee"},
-    {file = "rocksdb-0.7.0-cp38-cp38-manylinux2010_x86_64.whl", hash = "sha256:6f89999367e79e40a9e45e69676b5672e491652d35c0062b26ee7f61303e9378"},
-    {file = "rocksdb-0.7.0.tar.gz", hash = "sha256:27c366d7e6e9058eb47aeae607671544cc63a4413abd2035aad82a674dbf9f84"},
 ]
 six = [
     {file = "six-1.15.0-py2.py3-none-any.whl", hash = "sha256:8b74bedcbbbaca38ff6d7491d76f2b06b3592611af620f8426e82dddb04a5ced"},
