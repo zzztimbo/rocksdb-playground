@@ -29,10 +29,3 @@ COPY poetry.lock pyproject.toml ./
 
 RUN poetry config virtualenvs.create false \
  && poetry install --no-interaction --no-ansi --no-dev
-
-
-#RUN git clone https://github.com/facebook/rocksdb.git
-#RUN cd rocksdb && make build && cd build && cmake ..
-#RUN export CPLUS_INCLUDE_PATH=${CPLUS_INCLUDE_PATH}:`pwd`/../include
-#RUN export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:`pwd`
-#RUN export LIBRARY_PATH=${LIBRARY_PATH}:`pwd`
