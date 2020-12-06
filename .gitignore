@@ -1,2 +1,8 @@
 # ide
 .idea/
+
+# poetry
+.venv/
+
+# garden 
+.garden/
