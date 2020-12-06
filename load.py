@@ -1,11 +1,11 @@
 import random
+import uuid
 
 import numpy as np
 import pandas as pd
 import rocksdb
+
 from loguru import logger
-from tabulate import tabulate
-import uuid
 
 def _random_embedding():
     return np.array([random.uniform(-1, 1) for _ in range(128)])
